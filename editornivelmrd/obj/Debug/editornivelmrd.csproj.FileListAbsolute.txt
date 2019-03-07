@@ -1,0 +1,10 @@
+C:\Users\josepablo\source\repos\editornivelmrd\editornivelmrd\bin\Debug\editornivelmrd.exe.config
+C:\Users\josepablo\source\repos\editornivelmrd\editornivelmrd\bin\Debug\editornivelmrd.exe
+C:\Users\josepablo\source\repos\editornivelmrd\editornivelmrd\bin\Debug\editornivelmrd.pdb
+C:\Users\josepablo\source\repos\editornivelmrd\editornivelmrd\obj\Debug\editornivelmrd.csprojResolveAssemblyReference.cache
+C:\Users\josepablo\source\repos\editornivelmrd\editornivelmrd\obj\Debug\editornivelmrd.Form1.resources
+C:\Users\josepablo\source\repos\editornivelmrd\editornivelmrd\obj\Debug\editornivelmrd.Properties.Resources.resources
+C:\Users\josepablo\source\repos\editornivelmrd\editornivelmrd\obj\Debug\editornivelmrd.csproj.GenerateResource.Cache
+C:\Users\josepablo\source\repos\editornivelmrd\editornivelmrd\obj\Debug\editornivelmrd.csproj.CoreCompileInputs.cache
+C:\Users\josepablo\source\repos\editornivelmrd\editornivelmrd\obj\Debug\editornivelmrd.exe
+C:\Users\josepablo\source\repos\editornivelmrd\editornivelmrd\obj\Debug\editornivelmrd.pdb
