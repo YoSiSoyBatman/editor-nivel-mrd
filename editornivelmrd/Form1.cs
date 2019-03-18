@@ -16,6 +16,7 @@ namespace editornivelmrd
 
         int clicks = 0; //numero de click
         int clickx0, clicky0; // coordenadas primer click
+        int mouseX, mouseY;
         public List<Rectangle> rects;
         public List<char> things;
         char key = 'n';
@@ -56,7 +57,11 @@ namespace editornivelmrd
                 e.Graphics.DrawRectangle(p1, r.X, r.Y, r.Width, r.Height);
                 i++;
             }
-            
+            if (clicks == 1 && key == 'p')
+            {
+                e.Graphics.DrawRectangle(new Pen(Color.Cyan), clickx0, clicky0, mouseX - clickx0, mouseY - clicky0);
+            }
+
         }
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
@@ -71,7 +76,7 @@ namespace editornivelmrd
                     if (rects.Count >= 1)
                     {
                         rects.RemoveAt(rects.Count - 1);
-                        things.RemoveAt(rects.Count - 1);
+                        things.RemoveAt(things.Count - 1);
                     }
                     break;
                 default:
@@ -113,6 +118,17 @@ namespace editornivelmrd
             }
             Invalidate();
         }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (clicks == 1 && key == 'p')
+            {
+                mouseX = e.X;
+                mouseY = e.Y;
+                Invalidate();
+            }
+        }
+
         private void Imprimir_Cosas()
         {
             string s = "";
@@ -122,7 +138,7 @@ namespace editornivelmrd
                 int y1 = rects[i].Y;
                 int x2 = rects[i].X + rects[i].Height;
                 int y2 = rects[i].Y + rects[i].Width;
-                s += things[i].ToString() + i + " " + x1 + " " + y1 + " | " + x2 + " " + y2 + "\n";
+                s += things[i].ToString() + " " + x1 + " " + y1 + " " + x2 + " " + y2 + "\n";
             }
             MessageBox.Show(s);
         }
